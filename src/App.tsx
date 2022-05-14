@@ -7,7 +7,6 @@ function App() {
 
   useEffect(() => {
     document.title = "Slider"
-
   },[])
 
   const [width, setWidth] = useState(0)
@@ -17,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <motion.div ref={carousel} className='carousel' >
-        <motion.div drag="x" dragConstraints={{ right: 0 , left: -1907}} className='inner-carousel'>
+        <motion.div drag="y" dragConstraints={{ right: 0 , left: 5380}} className='inner-carousel'>
           {
             images.map(image => {
               return (
